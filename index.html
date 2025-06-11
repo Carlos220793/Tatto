@@ -1650,9 +1650,19 @@ button[type="submit"]:hover {
     <source src="INICIO/video-fondo1.mp4" type="video/mp4" />
     Tu navegador no soporta videos HTML5.
   </video>
+ <div id="en-construccion">
+  <h1>🔧 Sitio en mantenimiento</h1>
+  <p>Muy pronto estará disponible.</p>
+</div>
+
+<div id="contenido-sitio" style="display: none;">
+  <!-- TODO el resto de tu página -->
+</div>
+
 <div id="fondoGaleria" class="fondo-galeria"></div>
 
   <header id="main-header">
+   
 
     <nav class="menu-principal">
       <a onclick="mostrarSeccion('sobre')">Sobre mí</a>
@@ -2700,6 +2710,10 @@ function cerrarLightboxTodos() {
     document.getElementById('servicios').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+ // Para mostrar el sitio (por ejemplo después de 5 segundos o cuando hagas clic)
+document.getElementById("en-construccion").style.display = "none";
+document.getElementById("contenido-sitio").style.display = "block";
+
 </script>
 <script>
 document.getElementById('formularioContacto').addEventListener('submit', function(e) {
@@ -2723,6 +2737,23 @@ document.getElementById('formularioContacto').addEventListener('submit', functio
 
   window.open(url, "_blank");
 });
+</script>
+<script>
+  const clave = prompt("Introduce la clave para entrar:");
+  if (clave !== "mi_clave_secreta") {
+    document.body.innerHTML = "<h2>🚫 Acceso denegado</h2>";
+  }
+</script>
+<button onclick="mostrarSitio()">Entrar</button>
+
+<div id="contenido" style="display: none;">
+  <!-- tu sitio -->
+</div>
+
+<script>
+  function mostrarSitio() {
+    document.getElementById("contenido").style.display = "block";
+  }
 </script>
 
 
