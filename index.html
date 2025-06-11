@@ -727,7 +727,7 @@ a {
 .fondo-galeria {
   position: fixed;
   inset: 0;
-  background: url('fondogaleria/fondogaleri.jpg') center center / cover no-repeat;
+  background: url('fondogaleria/fondogaleri1.jpg') center center / cover no-repeat;
   z-index: -2;
   display: none;
 }
@@ -735,7 +735,7 @@ a {
   width: 100%;
   margin: 0;
   padding: 100px 0;
-  background: url('fondogaleria/fondo1.jpg') center center / cover no-repeat;
+  background: url('fondogaleria/fondo11.png') center center / cover no-repeat;
   background-attachment: fixed; /* para que se quede estático al hacer scroll */
   color: white;
 }
@@ -747,12 +747,12 @@ a {
 }
 
 .fondo-biografia {
-  background: url('fondosobremi/fondo.2.png') center center / cover no-repeat;
+  background: url('fondosobremi/fondo.21.png') center center / cover no-repeat;
   background-attachment: fixed; /* Para efecto parallax si lo deseas */
   color: white;
 }
 .fondo-monkey {
-  background: url('fondosobremi/fondo3.png') center center / cover no-repeat;
+  background: url('fondosobremi/fondo31.png') center center / cover no-repeat;
   background-attachment: fixed;
   color: white;
   position: relative;
@@ -861,7 +861,7 @@ a {
 .fondo-reserva {
   position: fixed;
   inset: 0;
-  background: url('fondosobremi/fondosibre.png') center center / cover no-repeat;
+  background: url('fondosobremi/fondosibre1.png') center center / cover no-repeat;
   z-index: -2;
   display: none;
 }.texto-cuidado h2 {
@@ -906,15 +906,15 @@ a {
   position: relative;
 }
 .color-card {
-  background: url('fondogaleria/fondocolor.jpg') center center / cover no-repeat;
+  background: url('fondogaleria/fondocolor1.jpg') center center / cover no-repeat;
   position: relative;
 }
 .fondo-pasos {
-  background: url('fondosobremi/fondosibre.png') center center / cover no-repeat;
+  background: url('fondosobremi/fondosibre1.png') center center / cover no-repeat;
   background-attachment: fixed; 
 }
 .fondo-cuidados {
-  background: url('fondogaleria/fondogaleria1.jpg') center center / cover no-repeat;
+  background: url('fondogaleria/fondogaleria11.jpg') center center / cover no-repeat;
   background-attachment: fixed; /* si quieres efecto parallax */
   background-size: cover;
   background-position: center;
@@ -1145,7 +1145,7 @@ a {
   margin-top: 100px;
 }
 .fondo-servicios {
-  background-image: url('fondoservicos/fondoservicios.jpg'); /* cambia a tu ruta */
+  background-image: url('fondoservicos/fondoservicios1.jpg'); /* cambia a tu ruta */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1521,24 +1521,7 @@ button:hover {
   background-color: #c0392b;
 }
 
-/* 💬 Botón de WhatsApp */
-#detalle-citas .btn-whatsapp {
-  display: inline-block;
-  margin: 20px 0;
-  padding: 12px 25px;
-  background-color: #25d366;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease;
-}
 
-#detalle-citas .btn-whatsapp:hover {
-  background-color: #1ebe5d;
-}
 
 /* ⏰ Info de horarios y tiempos de respuesta */
 #detalle-citas .info-horarios {
@@ -1618,11 +1601,53 @@ button[type="submit"]:hover {
   color: lightgreen;
 }
 
+.float-btn {
+  position: fixed;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+
+.float-btn img {
+  width: 100%;
+  height: auto;
+}
+
+/* Posiciones desde abajo */
+.whatsapp-float {
+  bottom: 200px;
+}
+
+.insta-float {
+  bottom: 140px;
+}
+
+.tiktok-float {
+  bottom: 80px;
+}
+
+.facebook-float {
+  bottom: 20px;
+}
+
+
   </style>
 </head>
 <body>
   <video autoplay muted loop id="fondo-video">
-    <source src="VIDEO-fondo.mp4" type="video/mp4" />
+    <source src="INICIO/video-fondo1.mp4" type="video/mp4" />
     Tu navegador no soporta videos HTML5.
   </video>
 <div id="fondoGaleria" class="fondo-galeria"></div>
@@ -1632,7 +1657,7 @@ button[type="submit"]:hover {
     <nav class="menu-principal">
       <a onclick="mostrarSeccion('sobre')">Sobre mí</a>
       <a onclick="mostrarSeccion('galeria')">Galería</a>
-      <img src="FOTO.2.png" alt="Decoración" class="menu-img" />
+      <img src="INICIO/FOTO.22.png" alt="Decoración" class="menu-img" />
       <a onclick="mostrarSeccion('servicios')">Servicios</a>
       <a onclick="mostrarSeccion('contacto')">Contacto</a>
     </nav>
@@ -1640,7 +1665,7 @@ button[type="submit"]:hover {
 
   <div class="hero">
     <div class="logo-central">
-      <img src="TATTO.png" alt="Logo Monkey Tattoo" />
+      <img src="INICIO/TATTO1.png" alt="Logo Monkey Tattoo" />
     </div>
     <div class="flecha-scroll" onclick="scrollToContent()">⬇</div>
   </div>
@@ -1665,7 +1690,7 @@ Bienvenidos a mi mundo. Un espacio donde el arte, la piel y la historia personal
     <div class="contenido">
       <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 
-      <h3>MONKEY TATTOO</h3>
+      <h3>MONKEY TATTO</h3>
       <p>"Cada trazo que marco en tu piel es un pacto entre tu historia y mi arte.
 No dibujo sobre carne, dibujo sobre memorias, emociones, cicatrices y sueños.
 Porque un tatuaje no es solo tinta...
@@ -1708,9 +1733,9 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     <p class="intro-amplio">Algunas piezas recientes que muestran mi estilo, técnica y pasión por el arte en la piel.</p>
     
     <div class="galeria-mini">
-      <img src="foto1.jpg" alt="Tatuaje 1">
-      <img src="foto2.jpg" alt="Tatuaje 2">
-      <img src="foto3.jpg" alt="Tatuaje 3">
+      <img src="INICIO/foto11.jpg" alt="Tatuaje 1">
+      <img src="INICIO/foto22.jpg" alt="Tatuaje 2">
+      <img src="INICIO/foto33.jpg" alt="Tatuaje 3">
     </div>
   </div>
 </div>
@@ -1770,7 +1795,7 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
         <br><br>
         Explora mi galería y descubre cómo la aguja transforma emociones en obras eternas.
         <br><br>
-        <strong>MONKEY TATTOO</strong> 
+        <strong>MONKEY TATTO</strong> 
       </p>
     </div>
   </div>
@@ -1811,7 +1836,7 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
         </ol>
       </div>
       <div class="imagen-cuidado">
-        <img src="fondosobremi/fondosobre1.png" alt="Tatuador dando cuidados" />
+        <img src="fondosobremi/fondosobre11.png" alt="Tatuador dando cuidados" />
       </div>
     </div>
   </section>
@@ -1895,9 +1920,9 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     </p>
 
     <div class="galeria-tatuajes">
-      <img src="fondoservicos/servicios1.jpg" alt="Diseño personalizado 1">
-      <img src="fondoservicos/servicios2.jpg" alt="Diseño personalizado 2">
-      <img src="fondoservicos/servicios3.jpg" alt="Diseño personalizado 3">
+      <img src="fondoservicos/servicios11.jpg" alt="Diseño personalizado 1">
+      <img src="fondoservicos/servicios22.jpg" alt="Diseño personalizado 2">
+      <img src="fondoservicos/servicios33.jpg" alt="Diseño personalizado 3">
       <!-- Agrega más imágenes según necesites -->
     </div>
 
@@ -1930,7 +1955,8 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     </ul>
 
     <div class="galeria-tatuajes">
-      <img src="fondoservicos/foto.png" alt="Tatuaje estilo realismo">
+      <img src="fondoservicos/foto1.png" alt="Tatuaje estilo realismo">
+    
     </div>
 
     <p class="mensaje-final">
@@ -1980,7 +2006,7 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     <p>
       Utilizamos materiales esterilizados, guantes nuevos, máquinas desinfectadas y espacios pulcros para garantizar una experiencia segura.
     </p>
-    <img src="fondoservicos/servicios.jpg" alt="Protocolos de higiene" style="width: 100%; border-radius: 10px; margin: 30px 0;">
+    <img src="fondoservicos/servicioss.jpg" alt="Protocolos de higiene" style="width: 100%; border-radius: 10px; margin: 30px 0;">
     <p>
       Nos tomamos en serio cada detalle para que puedas confiar plenamente en tu tatuaje y en nuestro equipo.
     </p>
@@ -1997,7 +2023,7 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     <p>
       Te entregamos instrucciones claras sobre cómo lavar, hidratar y proteger tu tatuaje durante los primeros días.
     </p>
-    <img src="fondoservicos/cuidado.jpg" alt="Cuidados post tatuaje" style="width: 100%; border-radius: 10px; margin: 30px 0;">
+    <img src="fondoservicos/cuidado1.jpg" alt="Cuidados post tatuaje" style="width: 100%; border-radius: 10px; margin: 30px 0;">
     <p>
       Además, te damos seguimiento personalizado en caso de dudas. ¡Nos importa que tu tatuaje sane perfecto!
     </p>
@@ -2014,7 +2040,7 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     <p>
       Escuchamos tus conceptos, emociones e ideas abstractas y las convertimos en propuestas visuales únicas. Te mostramos bocetos y opciones hasta encontrar lo que realmente te representa.
     </p>
-    <img src="fondoservicos/asesoria.jpg" alt="Asesoría creativa" style="width: 100%; border-radius: 10px; margin: 30px 0;">
+    <img src="fondoservicos/asesoria1.jpg" alt="Asesoría creativa" style="width: 100%; border-radius: 10px; margin: 30px 0;">
     <p>
       Aquí empieza tu diseño, tu historia... tu arte.
     </p>
@@ -2026,7 +2052,7 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
 
 
   <section id="contacto" class="seccion" style="display: none;">
-  <h2>📩 Contáctame</h2>
+  <h2>📩 Contáctanos</h2>
   <form id="formularioContacto">
     <div class="form-group">
       <label for="nombre">Nombre:</label>
@@ -2053,7 +2079,41 @@ Bienvenid@ a Monkey Tattoo Studio.</p>
     &copy; 2025 Monkey Tattoo. Todos los derechos reservados.
   </footer>
 
-  <a href="https://wa.me/573223709928" target="_blank" class="whatsapp-float" title="Contáctame por WhatsApp">💬</a>
+<!-- WhatsApp -->
+<a href="https://wa.me/573223709928" 
+   target="_blank" 
+   class="float-btn whatsapp-float" 
+   title="Contáctame por WhatsApp" 
+   aria-label="Contáctame por WhatsApp">
+  <img src="flotador/whasapp.jpg" alt="Ícono de WhatsApp" />
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/steven_monkey_tattoo?utm_source=qr&igsh=MTFidzBmeTUzaTh3YQ==" 
+   target="_blank" 
+   class="float-btn insta-float" 
+   title="Sígueme en Instagram" 
+   aria-label="Sígueme en Instagram">
+  <img src="flotador/inatagram1.jpg" alt="Ícono de Instagram" />
+</a>
+ 
+<!-- TikTok -->
+<a href="https://www.tiktok.com/@stevencastillo198921?_t=ZS-8x75FsuSj9E&_r=1" 
+   target="_blank" 
+   class="float-btn tiktok-float" 
+   title="Sígueme en TikTok" 
+   aria-label="Sígueme en TikTok">
+  <img src="flotador/tik tok.jpg" alt="Ícono de TikTok" />
+</a>
+
+<!-- Facebook -->
+<a href="https://www.facebook.com/people/Monkey-Tattoo/100071043886540/" 
+   target="_blank" 
+   class="float-btn facebook-float" 
+   title="Sígueme en Facebook" 
+   aria-label="Sígueme en Facebook">
+  <img src="flotador/facebok1.jpg" alt="Ícono de Facebook" />
+</a>
 
  <script>
   function mostrarSeccion(id) {
@@ -2149,14 +2209,12 @@ function cerrarLightboxBlackwork() {
   document.getElementById('lightbox-blackwork').style.display = 'none';
 }
 
-
 </script>
 
 
   
-  <script>
-    
-
+<script>
+  
     window.addEventListener('scroll', () => {
   const video = document.getElementById('fondo-video');
   if (window.scrollY > window.innerHeight * 0.6) {
@@ -2176,12 +2234,12 @@ function cerrarLightboxBlackwork() {
   let currentTranslate = 0;
   let prevTranslate = 0;
   let animationID;
-let imagenesAnimalista = [];
-let indiceAnimalista = 0;
-let imagenesColor = [];
-let indiceColor = 0;
-let imagenesTodos = [];
-let indiceTodos = 0;
+  let imagenesAnimalista = [];
+  let indiceAnimalista = 0;
+  let imagenesColor = [];
+  let indiceColor = 0;
+  let imagenesTodos = [];
+  let indiceTodos = 0;
 
   // Crear puntos
   for (let i = 0; i < slides.length; i++) {
